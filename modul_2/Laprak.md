@@ -27,7 +27,8 @@ Berbeda dengan fungsi, prosedur adalah blok kode yang tidak mengembalikan nilai 
  
 #### 3. Parameter Fungsi
 Parameter dalam fungsi terbagi menjadi parameter formal, yaitu variabel yang dideklarasikan saat fungsi dibuat, dan parameter aktual, yaitu nilai yang dipakai saat fungsi dipanggil. Cara melewatkan parameter ini ada tiga: *call by value*, di mana nilai parameter aktual hanya disalin ke parameter formal sehingga nilai aslinya tidak ikut berubah; serta *call by pointer* dan *call by reference*, yang sama-sama melewatkan alamat variabel ke dalam fungsi sehingga perubahan di dalamnya ikut mengubah nilai variabel asli di luar fungsi [3].
----
+
+```
 
 ## Guided
 
@@ -72,7 +73,12 @@ int main()
 }
 ```
 
-<p>Penjelasan</p>
+<p>Program ini digunakan untuk menerima dan menampilkan data nilai siswa serta menampilkan data nilai tahunan yang sudah disimpan dalam sebuah array dua dimensi. Program menggunakan ukuran maksimal 5 data yang ditentukan melalui <code>MAX</code>.Pertama, program meminta pengguna memasukkan 5 nilai siswa. Setiap nilai disimpan ke dalam array <code>nilai</code> menggunakan perulangan <code>for</code>. Setelah semua nilai dimasukkan, program menampilkan kembali setiap nilai beserta nomor urutnya.</p>
+
+<p>Selain data nilai siswa, program juga memiliki array dua dimensi <code>nilai_tahun</code> yang berisi data nilai tahunan. Data tersebut sudah ditentukan di dalam program dan tidak perlu dimasukkan oleh pengguna.
+Selanjutnya, program menggunakan dua perulangan <code>for</code> untuk menampilkan seluruh isi <code>nilai_tahun</code>. Perulangan pertama digunakan untuk berpindah antarbaris, sedangkan perulangan kedua digunakan untuk menampilkan setiap nilai pada kolom. Setelah satu baris selesai ditampilkan, program berpindah ke baris berikutnya.</p>
+
+<p>Jadi, program menghasilkan dua bagian utama, yaitu daftar nilai siswa yang dimasukkan oleh pengguna dan tabel nilai tahunan yang sudah tersedia di dalam program.</p>
 
 ### 2.
 
@@ -98,7 +104,11 @@ int main()
 }
 ```
 
-<p>Penjelasan</p>
+<p>Program ini digunakan untuk menunjukkan cara kerja <strong>pointer</strong> dalam C++. Program menggunakan variabel <code>x</code> untuk menyimpan nilai 87 dan pointer <code>px</code> untuk menyimpan alamat memori dari variabel tersebut.</p>
+
+<p>Pada awal program, nilai <code>x</code> diisi dengan 87. Kemudian <code>px = &amp;x</code> membuat pointer <code>px</code> menyimpan alamat memori dari <code>x</code>. Setelah itu, <code>y = *px</code> mengambil nilai yang berada pada alamat tersebut, sehingga nilai <code>y</code> menjadi 87.Selanjutnya, program menampilkan alamat memori <code>x</code> menggunakan <code>&amp;x</code> dan isi pointer <code>px</code>. Kedua nilai tersebut menunjukkan alamat yang sama karena <code>px</code> memang menyimpan alamat dari <code>x</code>.</p>
+
+<p>Program kemudian menampilkan nilai <code>x</code>, nilai yang ditunjuk oleh <code>px</code> menggunakan <code>*px</code>, serta nilai <code>y</code>. Ketiganya menghasilkan nilai yang sama, yaitu <strong>87</strong>. Jadi, program ini memperlihatkan hubungan antara variabel, alamat memori, dan pointer. Operator <code>&amp;</code> digunakan untuk mendapatkan alamat suatu variabel, sedangkan operator <code>*</code> digunakan untuk mengambil nilai yang berada pada alamat yang ditunjuk oleh pointer.</p>
 
 ### 3.
 
@@ -128,7 +138,11 @@ int maks3(int a, int b, int c){
   return (temp_max);
 }
 ```
-<p>Penjelasan</p>
+<p>Program ini digunakan untuk mencari nilai terbesar dari tiga bilangan yang dimasukkan oleh pengguna. Program menggunakan fungsi <code>maks3</code> untuk melakukan proses pencarian nilai maksimum.</p>
+
+<p>Program terlebih dahulu meminta pengguna memasukkan tiga bilangan yang disimpan ke dalam variabel <code>x</code>, <code>y</code>, dan <code>z</code>. Setelah ketiga nilai diterima, program memanggil fungsi <code>maks3(x, y, z)</code> untuk mencari nilai yang paling besar. Di dalam fungsi <code>maks3</code>, nilai <code>a</code> digunakan sebagai nilai maksimum sementara dan disimpan dalam <code>temp_max</code>. Kemudian nilai <code>b</code> dibandingkan dengan <code>temp_max</code>. Jika <code>b</code> lebih besar, nilai maksimum sementara diganti dengan <code>b</code>. Proses yang sama dilakukan dengan membandingkan nilai <code>c</code> dengan nilai maksimum sementara.</p>
+
+<p>Setelah semua perbandingan selesai, nilai terbesar dikembalikan oleh fungsi melalui <code>return</code> dan langsung ditampilkan sebagai hasil akhir. Jadi, program akan menampilkan nilai terbesar dari tiga bilangan yang dimasukkan oleh pengguna.</p>
 
 ### 4.
 
@@ -150,7 +164,13 @@ void tulis(int x){
         cout << "baris ke-" << i + 1 << endl;
 }
 ```
-<p>Penjelasan</p>
+<p>Program ini digunakan untuk menampilkan nomor baris sebanyak jumlah yang dimasukkan oleh pengguna. Program menggunakan fungsi <code>tulis</code> untuk melakukan proses penampilan baris.</p>
+
+<p>Program terlebih dahulu meminta pengguna memasukkan jumlah baris yang diinginkan dan menyimpannya ke dalam variabel <code>jum</code>. Nilai tersebut kemudian dikirim ke fungsi <code>tulis</code> sebagai parameter.</p>
+
+<p>Di dalam fungsi <code>tulis</code>, program menggunakan perulangan <code>for</code> yang dimulai dari <code>i = 0</code> dan berjalan selama <code>i &lt; x</code>. Setiap kali perulangan berjalan, program menampilkan tulisan <code>"baris ke-"</code> diikuti dengan nilai <code>i + 1</code>.</p>
+
+<p>Jadi, jika pengguna memasukkan angka 5, fungsi akan menampilkan <strong>baris ke-1</strong> sampai <strong>baris ke-5</strong>. Setelah jumlah baris yang diminta selesai ditampilkan, program berhenti.</p>
 
 ### 5.
 
@@ -185,7 +205,11 @@ void tukar(int x, int y){
     cout << "x = " << x << " y = " << y << endl;
 }
 ```
-<p>Penjelasan</p>
+<p>Program ini digunakan untuk membandingkan tiga cara pengiriman parameter dalam C++, yaitu <strong>call by value</strong>, <strong>call by pointer</strong>, dan <strong>call by reference</strong>. Ketiganya digunakan untuk menukar nilai dari variabel <code>a</code> dan <code>b</code>.</p>
+
+<p>Pada awal program, variabel <code>a</code> bernilai 4 dan <code>b</code> bernilai 6. Program pertama menjalankan fungsi <code>tukarValue</code>. Nilai <code>a</code> dan <code>b</code> hanya dikirim sebagai salinan, sehingga pertukaran yang terjadi di dalam fungsi tidak mengubah nilai asli. Setelah fungsi selesai, <code>a</code> tetap 4 dan <code>b</code> tetap 6.Selanjutnya, fungsi <code>tukarPointer</code> dipanggil dengan mengirimkan alamat dari <code>a</code> dan <code>b</code>. Fungsi menggunakan operator <code>*</code> untuk mengakses nilai pada alamat tersebut, sehingga nilai asli kedua variabel dapat ditukar. Hasilnya, <code>a</code> menjadi 6 dan <code>b</code> menjadi 4.Program menjalankan fungsi <code>tukarReference</code>. Karena parameter fungsi menggunakan reference, fungsi dapat langsung bekerja pada variabel asli tanpa membuat salinan. Nilai <code>a</code> dan <code>b</code> kembali ditukar, sehingga <code>a</code> menjadi 4 dan <code>b</code> menjadi 6.</p>
+
+<p>Jadi, <strong>call by value</strong> tidak mengubah variabel asli, sedangkan <strong>call by pointer</strong> dan <strong>call by reference</strong> dapat mengubah nilai variabel yang dikirimkan ke fungsi.</p>
 
 
 
