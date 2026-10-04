@@ -276,10 +276,10 @@ int main() {
 ### Output Unguided 1 :
 
 #### Output 1
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_2/output/output1.1.png" >
 
 #### Output 2
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_2/output/output1.2.png" >
 
 <p>Program ini digunakan untuk melakukan beberapa operasi pada dua buah matriks berukuran 3×3, yaitu matriks A dan matriks B. Hasil dari setiap operasi disimpan dalam matriks C. Pengisian dilakukan menggunakan dua perulangan <code>for</code>, yaitu untuk menentukan posisi baris dan kolom setiap elemen matriks.</p>Setelah kedua matriks dimasukkan, program menampilkan menu yang berisi pilihan penjumlahan, pengurangan, perkalian, dan keluar. Menu tersebut berada dalam perulangan <code>do-while</code>, sehingga pengguna dapat memilih operasi lebih dari satu kali sampai memilih angka 0.</p>
 
@@ -335,10 +335,10 @@ int main() {
 ### Output Unguided 2 :
 
 #### Output 1
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_2/output/output2.1.png" >
 
 #### Output 2
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_2/output/output2.2.png" >
 
 <p>Program ini digunakan untuk menukar nilai tiga variabel <code>a</code>, <code>b</code>, dan <code>c</code> dengan dua cara, yaitu menggunakan <strong>pointer</strong> dan <strong>reference</strong>. Program terlebih dahulu meminta pengguna memasukkan nilai untuk ketiga variabel tersebut.Setelah nilai dimasukkan, program menampilkan kondisi awal dari <code>a</code>, <code>b</code>, dan <code>c</code>. Selanjutnya, fungsi <code>tukarPointer</code> dipanggil dengan mengirimkan alamat dari ketiga variabel menggunakan operator <code>&amp;</code>. Fungsi tersebut menggunakan alamat memori untuk mengakses dan menukar nilai ketiga variabel dengan bantuan variabel sementara <code>temp</code>.</p>
 
@@ -433,12 +433,9 @@ int main() {
 ```
 
 ### Output Unguided 3 :
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_2/output/output3.png" >
 
-#### Output 1
-<img src = "" >
 
-#### Output 2
-<img src = "" >
 
 <p>Program ini digunakan untuk mengolah data pada sebuah array yang berisi 10 bilangan. Terdapat beberapa pilihan yang bisa digunakan, yaitu menampilkan isi array, mencari nilai terbesar, mencari nilai terkecil, dan menghitung nilai rata-rata.Data pada array <code>arrA</code> sudah ditentukan sejak awal, yaitu <code>48, 2, 7, 21, 5, 20, 77, 9, 10, 1</code>. Program kemudian menampilkan menu menggunakan perulangan <code>do-while</code>. Pengguna dapat memilih menu sesuai operasi yang ingin dilakukan, dan menu akan terus muncul selama pengguna belum memilih 0.</p>
 
