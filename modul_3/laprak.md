@@ -10,7 +10,7 @@ Abstract Data Type (ADT) merupakan konsep dalam pemrograman yang mendefinisikan 
  
 #### 1. Pengertian ADT
  
-ADT pada dasarnya adalah definisi TYPE beserta sekumpulan PRIMITIF yang berlaku terhadap type tersebut, dan bersifat statik karena hanya mendefinisikan spesifikasi, bukan implementasi fisiknya. Satu ADT bahkan bisa memuat definisi ADT lain di dalamnya — misalnya ADT Waktu yang tersusun dari ADT Jam dan ADT Tanggal, atau ADT Garis yang tersusun dari dua buah ADT Point.
+ADT pada dasarnya adalah definisi TYPE beserta sekumpulan PRIMITIF yang berlaku terhadap type tersebut, dan bersifat statik karena hanya mendefinisikan spesifikasi, bukan implementasi fisiknya. Satu ADT bahkan bisa memuat definisi ADT lain di dalamnya, misalnya ADT Waktu yang tersusun dari ADT Jam dan ADT Tanggal, atau ADT Garis yang tersusun dari dua buah ADT Point.
  
 #### 2. Primitif dalam ADT
  
@@ -34,7 +34,7 @@ Representasi suatu ADT di C++ umumnya dibuat menggunakan `struct`, yang dipakai 
  
 #### 3. Penerapan ADT pada Studi Kasus
  
-Pada praktiknya, realisasi fungsi dan prosedur suatu ADT sedapat mungkin tetap memanfaatkan konstruktor dan selector yang telah didefinisikan, bukan mengakses langsung komponen di dalam struct. Dengan pola seperti ini, suatu ADT — misalnya ADT Mahasiswa yang memuat NIM dan nilai, atau ADT Pelajaran yang memuat nama dan kode mata kuliah — dapat dipakai secara konsisten dari program utama tanpa perlu mengetahui detail penyimpanan datanya secara internal.
+Pada praktiknya, realisasi fungsi dan prosedur suatu ADT sedapat mungkin tetap memanfaatkan konstruktor dan selector yang telah didefinisikan, bukan mengakses langsung komponen di dalam struct. Dengan pola seperti ini, suatu ADT, misalnya ADT Mahasiswa yang memuat NIM dan nilai, atau ADT Pelajaran yang memuat nama dan kode mata kuliah, dapat dipakai secara konsisten dari program utama tanpa perlu mengetahui detail penyimpanan datanya secara internal.
 
 ```
 
@@ -228,10 +228,10 @@ int main() {
 ### Output Unguided 1 :
 
 #### Output 1
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_3/output/soal1.1.png" >
 
 #### Output 2
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_3/output/soal1.2.png" >
 
  
 <p>Program ini menyimpan data maksimal 10 mahasiswa ke dalam *array* of `struct`, dengan penerapan konsep ADT yang dipisah menjadi tiga file. File `mahasiswa.h` berisi konstanta `MAX` bernilai 10 sebagai batas jumlah data dan `struct mahasiswa` dengan enam *field*. Field `nama` dan `nim` bertipe `string`, sedangkan `uts`, `uas`, `tugas`, dan `nilaiAkhir` bertipe `float`. File ini juga memuat deklarasi tiga fungsi: `inputMhs()`, `hitungNilaiAkhir()`, dan `tampilkanMhs()`. Baris `#ifndef MAHASISWA_H`, `#define MAHASISWA_H`, dan `#endif` mencegah file *header* ter-*include* berulang kali, sedangkan `using namespace std;` membuat `cout`, `cin`, `endl`, dan `string` dapat ditulis tanpa awalan `std::`.</p>
@@ -297,12 +297,7 @@ int main() {
 ```
 
 ### Output Unguided 2 :
-
-#### Output 1
-<img src = "" >
-
-#### Output 2
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_3/output/soal2.png" >
 
 <p>Program ini menerapkan ADT `pelajaran` sesuai spesifikasi pada soal, juga dalam tiga file. File `pelajaran.h` berisi `struct pelajaran` dengan dua *field* bertipe `string`, yaitu `namaMapel` dan `kodeMapel`, serta deklarasi fungsi `create_pelajaran()` dan prosedur `tampil_pelajaran()`. Komentar pada deklarasi menuliskan domain dan *range* untuk fungsi, serta *initial state* dan *final state* untuk prosedur, sesuai kaidah spesifikasi primitif pada materi ADT.</p>
  
@@ -403,12 +398,10 @@ int main() {
 
 ### Output Unguided 3 :
 #### Output 1
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_3/output/soal3.1.png" >
 
 #### Output 2
-<img src = "" >
-
-
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_3/output/soal3.2.png" >
 
 <P>Program ini menunjukkan penggunaan *array* 2D dan *pointer* pada tiga prosedur yang dipisah dalam file `tukar.h`, `tukar.cpp`, dan `main.cpp`. File `tukar.h` mendefinisikan konstanta `BARIS` dan `KOLOM` yang keduanya bernilai 3, sehingga ukuran *array* 3x3 dapat dipakai konsisten di seluruh program. File ini juga memuat deklarasi `tampilArray()`, `tukarArray()`, dan `tukarPointer()` beserta *initial state* dan *final state* masing-masing.</p>
  
@@ -417,9 +410,9 @@ int main() {
 <p>Di dalam fungsi `main()`, dideklarasikan dua *array* 2D `A` dan `B` berukuran 3x3 yang langsung diisi nilai awal, serta dua variabel `x` dan `y`. *Pointer* `p1` diarahkan ke `x` dan `p2` ke `y` dengan operator `&`. Program menampilkan kedua *array* sebelum ditukar, lalu memanggil `tukarArray(A, B, 1, 2)` sehingga elemen pada baris 1 kolom 2 saling bertukar (6 pada `A` dan 60 pada `B`), dan menampilkannya lagi. Setelah itu `tukarPointer(p1, p2)` dipanggil sehingga `x` yang semula 100 menjadi 200 dan `y` yang semula 200 menjadi 100. Program berakhir dengan `return 0;`.</p>
 
 ## Kesimpulan
-<p>Dari praktikum Modul 3 ini ADT bukan cuma soal bikin struct, melainkan soal memisahkan "apa yang bisa dilakukan terhadap data" dari "bagaimana data itu sebenarnya disimpan". Pada program buku, hal ini kelihatan jelas lewat tiga primitif yang berbeda peran: editIsi() sebagai pengubah nilai memakai parameter &buku supaya perubahannya ikut tersimpan di variabel aslinya, sementara tampilkanIsiBuku() dan checkPenulis() cukup memakai call by value karena keduanya hanya membaca data, tidak mengubah apa pun. Perbedaan kecil semacam ini sebenarnya mencerminkan cara ADT bekerja — tiap primitif punya tugas spesifik, dan cara ia menerima parameter mengikuti tugas tersebut.</p>
+<p>Dari praktikum Modul 3 ini ADT bukan cuma soal bikin struct, melainkan soal memisahkan "apa yang bisa dilakukan terhadap data" dari "bagaimana data itu sebenarnya disimpan". Pada program buku, hal ini kelihatan jelas lewat tiga primitif yang berbeda peran: editIsi() sebagai pengubah nilai memakai parameter &buku supaya perubahannya ikut tersimpan di variabel aslinya, sementara tampilkanIsiBuku() dan checkPenulis() cukup memakai call by value karena keduanya hanya membaca data, tidak mengubah apa pun. Perbedaan kecil semacam ini sebenarnya mencerminkan cara ADT bekerja, tiap primitif punya tugas spesifik, dan cara ia menerima parameter mengikuti tugas tersebut.</p>
 
-<p>Pola yang sama lalu muncul lagi di bagian unguided dengan variasi yang lebih kaya. Pada program mahasiswa, inputMhs() berperan sebagai mutator yang memanggil hitungNilaiAkhir() di dalamnya, jadi satu primitif bisa memanfaatkan primitif lain tanpa perlu menulis ulang logikanya. Pada program pelajaran, create_pelajaran() justru menunjukkan sisi lain dari konstruktor: ia tidak mengubah objek yang sudah ada lewat referensi, melainkan membangun objek baru dari nol dan langsung mengembalikannya sebagai hasil fungsi. Sementara itu, program tukar array dan pointer memperlihatkan bahwa prinsip modular ini sebenarnya tidak terbatas pada struct saja — memisahkan deklarasi dan realisasi ke file berbeda tetap berlaku meski yang dioperasikan hanya array dua dimensi dan pointer biasa.</p>
+<p>Pola yang sama lalu muncul lagi di bagian unguided dengan variasi yang lebih kaya. Pada program mahasiswa, inputMhs() berperan sebagai mutator yang memanggil hitungNilaiAkhir() di dalamnya, jadi satu primitif bisa memanfaatkan primitif lain tanpa perlu menulis ulang logikanya. Pada program pelajaran, create_pelajaran() justru menunjukkan sisi lain dari konstruktor: ia tidak mengubah objek yang sudah ada lewat referensi, melainkan membangun objek baru dari nol dan langsung mengembalikannya sebagai hasil fungsi. Sementara itu, program tukar array dan pointer memperlihatkan bahwa prinsip modular ini sebenarnya tidak terbatas pada struct saja, memisahkan deklarasi dan realisasi ke file berbeda tetap berlaku meski yang dioperasikan hanya array dua dimensi dan pointer biasa.</p>
 
 
 ## Referensi
