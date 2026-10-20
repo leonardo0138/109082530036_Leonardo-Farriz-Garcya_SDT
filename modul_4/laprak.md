@@ -403,7 +403,7 @@ int main() {
 ```
 
 ### Output Unguided 1 :
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_4/output/soal1.png" >
  
 <p>Program ini membuat linked list satu arah yang menyimpan bilangan bulat, dan kodenya dibagi jadi tiga file: singlylist.h, singlylist.cpp, dan main.cpp. Di singlylist.h, infotype adalah nama lain untuk int, jadi data yang disimpan berupa angka. Setiap elemen list dibuat dengan struct elmlist yang berisi info (angkanya) dan next (penunjuk ke elemen setelahnya). address adalah nama lain untuk pointer ke elmlist, dan Nil dipakai sebagai tanda bahwa tidak ada elemen lagi (nilainya NULL). Ada juga struct List yang hanya punya first, yaitu penunjuk ke elemen paling depan. Baris #ifndef, #define, dan #endif berguna supaya header tidak terbaca dua kali saat di-include, dan using namespace std; membuat cout dan endl bisa ditulis tanpa std::.</p>
 
