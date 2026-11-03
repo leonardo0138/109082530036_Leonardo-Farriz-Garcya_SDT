@@ -889,7 +889,9 @@ int main() {
 ```
 
 ### Output Unguided 1 :
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_6/ouput/output1.png" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_6/ouput/ouutput1.1(lanjutan).png" >
+
  
 <p>Doubly Linked List merupakan struktur data berupa kumpulan node yang saling terhubung menggunakan dua pointer, yaitu next untuk menunjuk node berikutnya dan prev untuk menunjuk node sebelumnya. Pada file doublyList.h, terdapat struktur kendaraan yang menyimpan informasi berupa nopol, warna, dan thnBuat, kemudian didefinisikan sebagai infotype. Tipe address digunakan sebagai pointer yang menunjuk ke elemen ElmList, sedangkan ElmList memiliki tiga bagian, yaitu info untuk menyimpan data kendaraan, next untuk menunjuk elemen selanjutnya, dan prev untuk menunjuk elemen sebelumnya. Selanjutnya, struktur List memiliki First sebagai penunjuk elemen pertama dan Last sebagai penunjuk elemen terakhir. File header juga berisi deklarasi fungsi yang digunakan untuk membuat list, mengalokasikan dan menghapus memori, menampilkan data, mencari elemen, serta melakukan operasi penyisipan dan penghapusan elemen.</p>
 
