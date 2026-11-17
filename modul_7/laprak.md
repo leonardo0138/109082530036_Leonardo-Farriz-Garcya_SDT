@@ -573,8 +573,8 @@ int main()
 ```
 
 ### Output Unguided 1 :
-<img src = "" >
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_7/output/soal1.png" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_7/output/soal1.1.png" >
 
  
  <p>Di `stack.h`, `infotype` adalah nama lain untuk `int`, dan `struct Stack` berisi array `info[20]` untuk menyimpan angka serta variabel `top` yang menunjukkan indeks data paling atas. Header ini juga memuat deklarasi tujuh fungsi: `createStack()`, `push()`, `pop()`, `printInfo()`, `balikStack()`, `pushAscending()`, dan `getInputStream()`. Baris `#ifndef`, `#define`, dan `#endif` mencegah header terbaca dua kali, dan `using namespace std;` membuat `cout`, `cin`, dan `endl` bisa ditulis tanpa `std::`.</p>
