@@ -36,9 +36,9 @@ Representasi tabel pada queue dapat diterapkan dengan beberapa alternatif mekani
 Primitif-primitif pada queue representasi tabel pada dasarnya serupa dengan representasi pointer, hanya saja ditambah fungsi `isFull()` untuk mengecek apakah antrean sudah mencapai kapasitas maksimumnya, mengingat representasi tabel memiliki keterbatasan jumlah elemen yang tidak dimiliki oleh representasi pointer.
 
 
-## unguided
+## guided
 
-### uguided_1
+### guided_1
 
 ### 1.
 
@@ -196,7 +196,7 @@ int main(){
  
 <p>Di `main()`, queue dibuat dengan `CreateQueue()`, lalu enam nama dimasukkan berurutan dengan `enQueue()`: aedil, aflah, leo, garcya, zaky, dan gaza. Setelah `viewQueue()` menampilkan semuanya sesuai urutan masuk, `deQueue()` dipanggil empat kali sehingga empat nama paling depan (aedil, aflah, leo, garcya) keluar lebih dulu, dan tersisa zaky dan gaza. Setelah isi queue ditampilkan lagi, `clearQueue()` dipanggil untuk menghapus sisa node. Spasi di akhir tiap nama (misalnya `"aedil "`) sengaja ditulis supaya antarnama pada output tidak menempel.</p>
 
-### uguided_2
+### guided_2
 
 ### 2.
 
