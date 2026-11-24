@@ -36,7 +36,7 @@ Representasi tabel pada queue dapat diterapkan dengan beberapa alternatif mekani
 Primitif-primitif pada queue representasi tabel pada dasarnya serupa dengan representasi pointer, hanya saja ditambah fungsi `isFull()` untuk mengecek apakah antrean sudah mencapai kapasitas maksimumnya, mengingat representasi tabel memiliki keterbatasan jumlah elemen yang tidak dimiliki oleh representasi pointer.
 
 
-## guided
+## Guided
 
 ### guided_1
 
@@ -475,7 +475,7 @@ int main() {
 }
 ```
 ### Output soal 1 :
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_8/output/soal1.png" >
 
 <p>Program ini membuat ADT Queue menggunakan array dengan tipe data integer dan kapasitas maksimal 5 elemen. Queue bekerja dengan prinsip FIFO (First In First Out). Program menerapkan mekanisme Queue Alternatif 1, yaitu posisi head tetap diam di indeks 0, sedangkan tail bergerak mengikuti penambahan dan pengurangan data. Di queue.h, terdapat konstanta MAX bernilai 5, typedef int infotype untuk menentukan tipe data elemen berupa integer, serta struct Queue yang memiliki array info untuk menyimpan data dan dua variabel, yaitu head dan tail sebagai penanda posisi depan dan belakang queue. Header ini juga berisi deklarasi enam fungsi, yaitu createQueue(), isEmptyQueue(), isFullQueue(), enqueue(), dequeue(), dan printInfo(). Baris #ifndef, #define, dan #endif digunakan untuk mencegah header terbaca lebih dari satu kali.</p>
 
@@ -607,7 +607,7 @@ int main() {
 }
 ```
 ### Output soal 2 :
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_8/output/soal2.png" >
 
 <p>Program menerapkan mekanisme Queue Alternatif 2, yaitu posisi `head` dan `tail` sama-sama bergerak mengikuti proses penambahan dan penghapusan data. Di `queue.h`, terdapat konstanta `MAX` bernilai 5, `typedef int infotype` untuk menentukan tipe data elemen berupa integer, serta `struct Queue` yang memiliki array `info` untuk menyimpan data dan dua variabel, yaitu `head` dan `tail` sebagai penanda posisi depan dan belakang queue. Header ini juga berisi deklarasi enam fungsi, yaitu `createQueue()`, `isEmptyQueue()`, `isFullQueue()`, `enqueue()`, `dequeue()`, dan `printInfo()`. Baris `#ifndef`, `#define`, dan `#endif` digunakan untuk mencegah header terbaca lebih dari satu kali.</p>
 
@@ -746,7 +746,7 @@ int main() {
 
 
 ### Output soal 3 :
-<img src = "" >
+<img src = "https://github.com/leonardo0138/109082530036_Leonardo-Farriz-Garcya_SDT/blob/main/modul_8/output/soal3.png" >
 
 <p>Program menerapkan mekanisme Queue Alternatif 3 atau *Queue Circular*, yaitu posisi `head` dan `tail` bergerak secara melingkar sehingga dapat kembali ke indeks awal ketika mencapai batas akhir array. Di `queue.h`, terdapat konstanta `MAX` bernilai 5, `typedef int infotype` untuk menentukan tipe data elemen berupa integer, serta `struct Queue` yang memiliki array `info` untuk menyimpan data dan dua variabel, yaitu `head` dan `tail` sebagai penanda posisi depan dan belakang queue. Header ini juga berisi deklarasi enam fungsi, yaitu `createQueue()`, `isEmptyQueue()`, `isFullQueue()`, `enqueue()`, `dequeue()`, dan `printInfo()`. Baris `#ifndef`, `#define`, dan `#endif` digunakan untuk mencegah header terbaca lebih dari satu kali.</p>
 
